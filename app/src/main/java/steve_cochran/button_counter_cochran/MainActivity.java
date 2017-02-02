@@ -1,5 +1,6 @@
 package steve_cochran.button_counter_cochran;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.app.Activity;
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     public TextView textView;
     public String stringTv;
-    private Integer count;
+    private Integer count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         textView = (TextView)findViewById(R.id.textView2);
 
-        count = 0;
         textView.setText(count.toString());
     }
 
@@ -54,6 +54,21 @@ public class MainActivity extends AppCompatActivity {
 
         textView.setText("0");
         Log.d("VIVZ", textView.toString());
+
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("countSave",count);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        count = savedInstanceState.getInt("countSave");
+        textView.setText(count.toString());
 
     }
 }
