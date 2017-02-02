@@ -11,7 +11,50 @@
     tools:context="steve_cochran.button_counter_cochran.MainActivity">
 
     <TextView
+        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179dp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:text="Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomething2"
+
+        android:id="@+id/button2"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomething3"
+
+        android:id="@+id/button3"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+
+    <Button
+        android:text="Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomething1"
+
+        android:layout_marginTop="76dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
 </RelativeLayout>
