@@ -173,36 +173,75 @@ public class MainActivity extends AppCompatActivity {
             int Result = rn.nextInt(5)+1;
 
             if(Result == 1){
+                radio1.setVisibility(View.INVISIBLE);
+                radio2.setVisibility(View.INVISIBLE);
+                radio3.setVisibility(View.INVISIBLE);
+                radio4.setVisibility(View.INVISIBLE);
+                radio5.setVisibility(View.INVISIBLE);
+                radio6.setVisibility(View.INVISIBLE);
+
 
                 radio1.setVisibility(View.VISIBLE);
 
             }
 
             if(Result == 2){
+                radio1.setVisibility(View.INVISIBLE);
+                radio2.setVisibility(View.INVISIBLE);
+                radio3.setVisibility(View.INVISIBLE);
+                radio4.setVisibility(View.INVISIBLE);
+                radio5.setVisibility(View.INVISIBLE);
+                radio6.setVisibility(View.INVISIBLE);
+
 
                 radio2.setVisibility(View.VISIBLE);
 
             }
 
             if(Result == 3){
+                radio1.setVisibility(View.INVISIBLE);
+                radio2.setVisibility(View.INVISIBLE);
+                radio3.setVisibility(View.INVISIBLE);
+                radio4.setVisibility(View.INVISIBLE);
+                radio5.setVisibility(View.INVISIBLE);
+                radio6.setVisibility(View.INVISIBLE);
 
                 radio3.setVisibility(View.VISIBLE);
 
             }
 
             if(Result == 4){
+                radio1.setVisibility(View.INVISIBLE);
+                radio2.setVisibility(View.INVISIBLE);
+                radio3.setVisibility(View.INVISIBLE);
+                radio4.setVisibility(View.INVISIBLE);
+                radio5.setVisibility(View.INVISIBLE);
+                radio6.setVisibility(View.INVISIBLE);
+
 
                 radio4.setVisibility(View.VISIBLE);
 
             }
 
             if(Result == 5){
+                radio1.setVisibility(View.INVISIBLE);
+                radio2.setVisibility(View.INVISIBLE);
+                radio3.setVisibility(View.INVISIBLE);
+                radio4.setVisibility(View.INVISIBLE);
+                radio5.setVisibility(View.INVISIBLE);
+                radio6.setVisibility(View.INVISIBLE);
 
                 radio5.setVisibility(View.VISIBLE);
 
             }
 
             if(Result == 6){
+                radio1.setVisibility(View.INVISIBLE);
+                radio2.setVisibility(View.INVISIBLE);
+                radio3.setVisibility(View.INVISIBLE);
+                radio4.setVisibility(View.INVISIBLE);
+                radio5.setVisibility(View.INVISIBLE);
+                radio6.setVisibility(View.INVISIBLE);
 
                 radio6.setVisibility(View.VISIBLE);
 
@@ -214,19 +253,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
-            radio1.setVisibility(View.VISIBLE);
-
-
-
-
             game = true;
 
         } else {
+
+            textView.setText("BACK");
 
             button5.setText("GAME");
             button1.setVisibility(View.VISIBLE);
